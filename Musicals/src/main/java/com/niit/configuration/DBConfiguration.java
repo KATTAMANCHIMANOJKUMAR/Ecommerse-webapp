@@ -76,12 +76,12 @@ return lsf.addAnnotatedClasses(classes).buildSessionFactory();
 	
        }
 
-	@Bean(name="productDao")
+/*	@Bean(name="productDao")
 	public ProductDao getProductDao()
 	{
 		System.out.println("---Product DAO Implementation ---");
 		return new ProductDaoImpl();
-	}
+	}*/
 	
 }
 	 

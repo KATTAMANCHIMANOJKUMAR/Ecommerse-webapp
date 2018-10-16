@@ -10,87 +10,70 @@ import org.springframework.transaction.annotation.Transactional;
 import com.niit.model.Category;
 import com.niit.model.Product;
 
-
 @Repository("productDao")
 @Transactional
 public class ProductDaoImpl implements ProductDao {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	public ProductDaoImpl(){
-	
+	public ProductDaoImpl() {
+
 		System.out.println("ProductDaoImpl  bean is created ");
 	}
-	
-	
-	
-	
-	public Product saveProduct(Product product){
-		Session session=sessionFactory.getCurrentSession();
-		System.out.println("id of the product before persisting"+product.getId());
+
+	public Product saveProduct(Product product) {
+		Session session = sessionFactory.getCurrentSession();
+		System.out.println("id of the product before persisting" + product.getId());
 		session.save(product);
-		System.out.println("id of the product After persisting"+product.getId());
+		System.out.println("id of the product After persisting" + product.getId());
 		return product;
-	
+
 	}
 
 	public Product getProduct(int id) {
 		// TODO Auto-generated method stub
-		Session session=sessionFactory.getCurrentSession();
-		
-		Product product=(Product)session.get(Product.class,id);
+		Session session = sessionFactory.getCurrentSession();
+
+		Product product = (Product) session.get(Product.class, id);
 		return product;
 	}
-	
 
-public Product updateProduct(Product product) {
+	public Product updateProduct(Product product) {
 
-	// TODO Auto-generated method stub
-	Session session=sessionFactory.getCurrentSession();
-	session.update(product);
-	
-	return product;
-}
+		// TODO Auto-generated method stub
+		Session session = sessionFactory.getCurrentSession();
+		session.update(product);
 
-public Product deleteProduct(int id) {
-	// TODO Auto-generated method stub
+		return product;
+	}
 
-	Session session=sessionFactory.getCurrentSession();
-	
-Product product=(Product)session.get(Product.class,id);
+	public Product deleteProduct(int id) {
+		// TODO Auto-generated method stub
 
- if(product!=null)
-	session.delete(product);
-	return product;
-}
+		Session session = sessionFactory.getCurrentSession();
 
-public List<Product> getAllProducts() {
-	// TODO Auto-generated method stub
-	Session session=sessionFactory.getCurrentSession();
-	Query query=(Query) session.createQuery("from Product");
-	List<Product> products= query.list();
-	return products ;
-    }
+		Product product = (Product) session.get(Product.class, id);
 
+		if (product != null)
+			session.delete(product);
+		return product;
+	}
 
+	public List<Product> getAllProducts() {
+		// TODO Auto-generated method stub
+		Session session = sessionFactory.getCurrentSession();
+		Query query = (Query) session.createQuery("from Product");
+		List<Product> products = query.list();
+		return products;
+	}
 
+	public List<Category> getAllCategories() {
+		// TODO Auto-generated method stub
+		Session session = sessionFactory.getCurrentSession();
+		Query query = (Query) session.createQuery("from Category");
+		List<Category> categories = query.list();
 
-public List<Category> getAllCategories() {
-	// TODO Auto-generated method stub
-	Session session=sessionFactory.getCurrentSession();
-	Query query=(Query) session.createQuery("from Category");
-	List<Category> categories= query.list();
-	
-	return categories;
-}
-
-
-
+		return categories;
+	}
 
 }
-	
-
-
-
-	
-
