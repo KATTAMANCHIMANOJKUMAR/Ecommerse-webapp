@@ -30,8 +30,8 @@
 			</tr>
 			<tr>
 			<td>Enter Product Description</td>
-			<td><form:textarea path="productdesc"></form:textarea>
-			<form:errors path="productdesc" cssStyle="color:red"> </form:errors>
+			<td><form:textarea path="productdescription"></form:textarea>
+			<form:errors path="productdescription" cssStyle="color:red"> </form:errors>
 			</td>
 			
 			</tr>

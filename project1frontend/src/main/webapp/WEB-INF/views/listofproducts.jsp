@@ -6,7 +6,27 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+
 <title>List of products</title>
+ <style>
+body {
+    background-color: #f49841;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+  table, th, td,tr {
+    border: 1px solid black;
+}  
+</style> 
 <script type="text/javascript">
 	$(document).ready(function() {
 		var searchCondition = '${searchCondition}'
@@ -22,15 +42,40 @@
 </script>
 
 
+
+<!-- <style>
+.myTable { 
+  width: 100%;
+  text-align: left;
+  background-color: lemonchiffon;
+  border-collapse: collapse; 
+  }
+.myTable th { 
+  background-color: goldenrod;
+  color: white; 
+  }
+.myTable td, 
+.myTable th { 
+  padding: 10px;
+  border: 1px solid goldenrod; 
+  }
+</style -->
+
+
 </head>
 <body>
-	<b>List of Products</b>
-	<br>${productsList}
+	
+	<%-- <br>${productsList} --%>
 	<div class="container">
+	
+ <table class="table table-striped" border="1" style="width:100%;text-align:left;background-color:#f49841;"  > 
+		
+		<!--  <table class="table table-striped" border="1"  >  -->
+<!-- <table border="1" ;background-color:#f49841;">  -->
+<!--  <table style="width:100%;text-align:left;background-color:#f49841;"> -->
 
-		<b>List of Products</b>
-		<table class="table table-striped" border="1">
-
+    
+  
 			<thead>
 				<tr>
 					<th>Id</th>
@@ -42,7 +87,7 @@
 
 				</tr>
 			</thead>
-			<tbody>
+			<tbody style="width:100%;text-align:left;background-color:#f49841;" >
 				<c:forEach var="p" items="${productsList}">
 
 					<tr>
@@ -50,7 +95,7 @@
 							href="<c:url value='/all/getproduct/${p.id }'></c:url>">${p.id }</a></td>
 						<td><img
 							src="<c:url value='/resources/images/${p.id }.jpg'></c:url>"
-							height="30px" width="30px"></td>
+							height="60%" width="60%"></td>
 
 						<td><a
 							href="<c:url value='/all/getproduct/${p.id }'></c:url>">${p.productname }</a></td>
@@ -73,6 +118,7 @@
 			</tbody>
 
 
+  
 		</table>
 
 

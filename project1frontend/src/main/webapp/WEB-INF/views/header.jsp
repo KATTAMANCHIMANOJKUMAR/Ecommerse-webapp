@@ -33,15 +33,18 @@
 	href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
 
 
+
+
 </head>
 <body>
 
-	<div class="container">
+	<!-- <div class="container"> -->
 		<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
 		<div class="navabar-header">
 			<a href="" class="navbar-brand"><img
-				src="resources/images/dragon.jpg" alt="NIIT" height="100%"
-				width="100%"></a>
+				src="resources/images/guitar pic.jpg" alt="NIIT" height="30px"
+				width="30px"></a>
 			<button type="button" class="navbar-toggle collapsed"
 				data-toggle="collapse" data-target="#navbardemo"
 				aria-expanded="false">
@@ -82,6 +85,7 @@
 					<li><a href="<c:url value='/cart/getcart'></c:url>"><span
 							class="glyphicon glyphicon-shopping-cart"></span></a></li>
 				</security:authorize>
+				<li><a href="<c:url value='/contact'></c:url>">Contact us</a></li>
 
 				<c:if test="${pageContext.request.userPrincipal.name==null }">
 					<li><a href="<c:url value='/all/registrationform'></c:url>">Sign

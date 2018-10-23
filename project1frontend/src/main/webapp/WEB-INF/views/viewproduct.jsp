@@ -18,7 +18,7 @@
 				<c:url value="/cart/addtocart/${productObj.id}" var="url"></c:url>
 				<form action="${url }">
 					<img
-						src="<c:url value='/resources/images/${productObj.id}.jpg'></c:url>">
+						src="<c:url value='/resources/images/${productObj.id}.jpg'></c:url>"height="100%" width="100%" >
 					<!-- <br>${productObj} -->
 					<b>Product Name:</b>${productObj.productname} <br> <b>Product
 						Descripton:</b>${productObj.productdescription} <br> <b>Product

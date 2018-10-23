@@ -18,51 +18,51 @@
 </head>
 <body>
 
-<b>Home Page</b>
+
 
   <div class="container">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="0"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="img-responsive" src="resources/images/dragon.jpg " alt="first slide" height="100%" width="100%">
+                <div class="item">
+                    <img class="img-responsive" src="resources/images/electro 5d keyboard.jpg " alt="first slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>WELCOME TO THE CAR STORE</h1>
-                            <p>Here You Can Browse And Buy Cars.Order Now For Your Amazing New Arrivals</p>
+                            <h1>WELCOME TO THE MUSICAL STORE</h1>
+                            <p>Here You Can Browse And Buy Musical Instruments.Order Now For Your Amazing New Arrivals</p>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-responsive" src="resources/images/wallpaper2.jpg" alt="Second slide" height="100%" width="100%">
+                    <img class="img-responsive" src="resources/images/guitar pic.jpg" alt="Second slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>The Car Store.</h1>
+                            <h1>The Musical Store.</h1>
                             <p>online shopping can make your life more easier</p>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-responsive" src="resources/images/devil.jpg" alt="Third slide" height="100%" width="100%">
+                    <img class="img-responsive" src="resources/images/Madelon.jpg" alt="Third slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>The Car You Love</h1>
+                            <h1>The Instrument You Love</h1>
                          <p>online shopping can make your life more easier</p>
                         </div>
                     </div>
                 </div>
-                 <div class="item">
-                    <img class="img-responsive" src="resources/images/wallpaper4.jpg" alt="forth slide" height="100%" width="100%">
+                 <div class="item active">
+                    <img class="img-responsive" src="resources/images/playing banjo.jpg" alt="forth slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Any car can be a "cool" car</h1>
-                            <p>your life,your car...you own it!!</p>
+                            <h1>Any Musical Instrument can be </h1>
+                            <p>your life,your passion...you own it!!</p>
                         </div>
                     </div>
                 </div>
